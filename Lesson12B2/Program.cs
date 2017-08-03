@@ -4,6 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+/*
+ * Name: Wayne Pud
+ * Student ID: 300931522
+ * Date: August 3rd, 2017
+ * Description: This is a calculator demo project
+ * Version: 0.1 - Created the Project
+ */
+
 namespace Lesson12B2
 {
     static class Program
@@ -16,7 +25,7 @@ namespace Lesson12B2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new CalculatorForm());
         }
     }
 }
