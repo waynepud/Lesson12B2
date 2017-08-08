@@ -28,15 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.SplashformTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // SplashformTimer
+            // 
+            this.SplashformTimer.Enabled = true;
+            this.SplashformTimer.Interval = 3000;
+            this.SplashformTimer.Tick += new System.EventHandler(this.SplashformTimer_Tick);
             // 
             // Splashform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(302, 433);
             this.ControlBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splashform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Splashform";
@@ -45,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer SplashformTimer;
     }
 }
