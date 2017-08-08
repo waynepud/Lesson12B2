@@ -13,13 +13,25 @@ using System.Windows.Forms;
  * Student ID: 300931522
  * Date: August 8th, 2017
  * Description: This is a splashform
- * Version: 0.2 - Created SplashFormTimer_Tick Event Handler
+ * Version: 0.3 - Refactored splashform
  */
 
 namespace Lesson12B2
 {
     public partial class Splashform : Form
     {
+        // PUBLIC PROPERTIES
+        public CalculatorForm CalculatorForm
+        {
+            get
+            {
+                return Program.calculatorForm;
+            }
+        }
+
+        // CONSTRUCTORS
+
+
         public Splashform()
         {
             InitializeComponent();
@@ -32,8 +44,9 @@ namespace Lesson12B2
         /// <param name="e"></param>
         private void SplashformTimer_Tick(object sender, EventArgs e)
         {
-            CalculatorForm calculatorForm = new CalculatorForm();
-            calculatorForm.Show();
+            //CalculatorForm calculatorForm = new CalculatorForm();
+            //Program.calculatorForm.Show();
+            this.CalculatorForm.Show();
             this.Hide();
             SplashformTimer.Enabled = false; // turn timer off
         }
