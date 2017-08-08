@@ -10,7 +10,7 @@ using System.Windows.Forms;
  * Student ID: 300931522
  * Date: August 3rd, 2017
  * Description: This is a calculator demo project
- * Version: 0.1 - Created the Project
+ * Version: 0.2 - Started splashform first
  */
 
 namespace Lesson12B2
@@ -25,7 +25,7 @@ namespace Lesson12B2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculatorForm());
+            Application.Run(new Splashform());
         }
     }
 }
